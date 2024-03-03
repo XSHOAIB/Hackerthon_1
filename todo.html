@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+    <title>To Do List</title>
+    
+    <h1><b><span style="font-weight: bold;">TO DO LIST</span></b></h1>
+    <h1></h1>
+    <style>
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 70%;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .animated-cell {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    
+</head>
+<body>
+<span></span>
+
+    <button onclick="redirectToWebsite1()">Previous Page</button>
+    <script>
+        function redirectToWebsite1() {
+         window.location.href = 'http://127.0.0.1:5500/index.html'; // Replace with the desired website URL
+        }
+     </script>
+    
+    
+    <table>
+        <thead>
+            <tr style="color: rgb(6, 6, 5);">
+                <th>Day</th>
+                <th>Task</th>
+                <th></th>
+                
+            </tr>
+        </thead>
+        <tbody style="color: rgb(110, 108, 108);">
+            <!-- You can add your schedule here -->
+            <tr class="animated-cell" >
+                
+
+                    <td >Monday</td>
+                    <td><p> Start the week by attending classes, taking comprehensive notes, and beginning your reading assignments. Allocate time for research on ongoing projects and maintain physical well-being with a 30-minute exercise session. Plan your meals for the week and create a shopping list.</p></td>
+                    
+                 
+            </tr>
+            <tr class="animated-cell">
+                
+                <td>Tuesday</td>
+                <td><p>Continue attending classes, participate actively, and complete assignments due later in the week. Prioritize reading assignments and dedicate at least two hours to ongoing term papers or projects. Study for upcoming quizzes or tests, and review and update your weekly to-do list.</p></td>
+                
+                
+            </tr>
+            <tr class="animated-cell">
+                
+                <td>Wednesday</td>
+                <td><p>Attend classes, engage with classmates, and focus on reviewing and revising ongoing projects. Keep up with reading assignments and attend club meetings or extracurricular activities if necessary. Arrange study group sessions and check your email for important updates.</p></td>
+                
+                
+            </tr>
+            <tr class="animated-cell">
+                
+                <td>Thursday</td>
+                <td><p>Maintain class attendance and seek clarification when needed. Work on assignments and consolidate class notes. Prepare for presentations if applicable. Review study group progress and make time for self-care activities like meditation.</p></td>
+                
+                
+            </tr>
+           
+            
+            <tr class="animated-cell">
+                
+                <td>Friday</td>
+                <td><p>Attend classes with active participation, complete and submit assignments, and continue project work. Organize your study materials and set aside time for planning weekend leisure activities while balancing productivity and relaxation.</p></td>
+                
+                
+            </tr>
+            <tr class="animated-cell">
+                
+                <td>Saturday</td>
+                <td><p>Review the week's materials, catch up on readings, and allocate time to term papers or projects. Study intensively for upcoming exams, take breaks for stress management, meet with study groups if applicable, and enjoy social activities or time with friends.</p></td>
+                
+               
+            </tr>
+            <tr class="animated-cell">
+                
+                <td>Sunday</td>
+                <td><p>Finalize term papers or projects, summarize key class concepts, and create a study plan for the upcoming week. Organize your materials for Monday's classes and take time to relax and recharge</p></td>
+                
+                
+            </tr>
+            <!-- Add more rows for different times -->
+        </tbody>
+    </table>
+</body>
+</html>

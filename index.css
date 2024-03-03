@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.timetable {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.day {
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.day:hover {
+    background-color: #2980b9;
+}
+
+.slots {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.slot {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.slot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

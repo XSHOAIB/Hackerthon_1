@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 80%;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .animated-cell {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="redirectToWebsite()">To Do List</a></li>
+            <li><a href="#"onclick="redirectToWebsite1()">Announcement</a></li>
+            <li><a href="#"onclick="redirectToWebsite2()">FeedBack</a></li>
+            <li><a href="#"onclick="redirectToWebsite3()">Assignment</a></li>
+        </ul>
+    </nav>
+    <!-- <button onclick="redirectToWebsite()">To Do List</button> -->
+
+    <script>
+            function redirectToWebsite() {
+              window.location.href = 'http://127.0.0.1:5500/todo.html'; // Replace with the desired website URL
+            }
+    </script>
+     <!-- <button onclick="redirectToWebsite1()">Announcements</button> -->
+
+    <script>
+        function redirectToWebsite1() {
+         window.location.href = 'http://127.0.0.1:5500/announcement.html'; // Replace with the desired website URL
+        }
+     </script>
+    <!-- <button onclick="redirectToWebsite2()">FeedBack</button> -->
+
+    <script>
+    function redirectToWebsite2() {
+        window.location.href = 'http://127.0.0.1:5500/feedback.html'; // Replace with the desired website URL
+    }
+     </script>
+    <!-- <button onclick="redirectToWebsite3()">Assignment</button> -->
+
+    <script>
+    function redirectToWebsite3() {
+        window.location.href = 'http://127.0.0.1:5500/assignment.html'; // Replace with the desired website URL
+    }
+     </script>
+    
+    
+    
+    <h1>College Timetable</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        
+        <tbody style="color: rgb(110, 108, 108);">
+            <!-- You can add your schedule here -->
+            <tr class="animated-cell" >
+                <td>8:00 - 9:00 AM</td>
+
+                    <td >DBMS</td>
+                    <td>STLD</td>
+                    <td>P&S</td>
+                    <td>PPL</td>
+                    <td>COM</td>
+                    <td>P&S</td> 
+                 
+            </tr>
+            <tr class="animated-cell">
+                <td>9:00 - 10:00 AM</td>
+                <td>Dis.M</td>
+                <td>DBMS</td>
+                <td>COM</td>
+                <td>P&S</td>
+                <td>P&S</td>
+                <td>COM</td>
+            </tr>
+            <tr class="animated-cell">
+                <td>10:00 - 11:00 AM</td>
+                <td>COM/DBMS Lab</td>
+                <td>EITK</td>
+                <td>DBMS/PPL Lab</td>
+                <td>STLD</td>
+                <td>SDC-I</td>
+                <td>Dis.M</td>
+            </tr>
+            <tr class="animated-cell">
+                <td>11:00 - 12:00 AM</td>
+                <td>COM/DBMS Lab</td>
+                <td>EITK</td>
+                <td>DBMS/PPL Lab</td>
+                <td>STLD</td>
+                <td>SDC-I</td>
+                <td>Dis.M</td>
+            </tr>
+           
+            <tr class="animated-cell">
+                
+                <td><bold>LUNCH</bold></td>
+                <td><bold>LUNCH</bold></td>
+                <td><bold>LUNCH</bold></td>
+                <td><bold>LUNCH</bold></td>
+                <td><bold>LUNCH</bold></td>
+                <td><bold>LUNCH</bold></td>
+                <td><bold>LUNCH</bold></td>
+                
+            </tr>
+            <tr class="animated-cell">
+                <td>1:00 - 2:00 PM</td>
+                <td>CRT TRANING</td>
+                <td>CRT TRANING</td>
+                <td>Dis.M</td>
+                <td>COM/PPL Lab</td>
+                <td>DBMS</td>
+                <td>STLD</td>
+            </tr>
+            <tr class="animated-cell">
+                <td>2:00 - 3:00 PM</td>
+                <td>CRT TRANING</td>
+                <td>CRT TRANING</td>
+                <td>DBMS</td>
+                <td>COM/PPL Lab</td>
+                <td>PPL</td>
+                <td>COM</td>
+            </tr>
+            <tr class="animated-cell">
+                <td>3:00 - 4:00 PM</td>
+                <td>LIBRARY</td>
+                <td>MAKEUP</td>
+                <td>TUTORIAL</td>
+                <td>SPORTS</td>
+                <td>REMIDIAL</td>
+                <td>INTERNET</td>
+            </tr>
+            <!-- Add more rows for different times -->
+          
+   
+        </tbody>
+    </table>
+</body>
+</html>
